@@ -172,4 +172,4 @@ function createQuestsOptionsRedz()
     questsLabel.Size = UDim2.new(1, 0, 0.1, 0)
     questsLabel.Position = UDim2.new(0, 0, 0, 0)
     questsLabel.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-    questsLabel.Background
+    questsLabel.BackgroundTransparency =
