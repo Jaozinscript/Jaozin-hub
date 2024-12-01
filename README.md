@@ -33,44 +33,64 @@ local function createButton(name, position)
     return button
 end
 
-local autoFarmButton = createButton("Auto Farm", 0.1)
+local autoFarmButton = createButton("Farm", 0.1)
 local statusButton = createButton("Status", 0.3)
-local fruitsButton = createButton("Fruits", 0.5)
+local seaEventButton = createButton("Sea Evento", 0.5)
+local questsButton = createButton("Quests", 0.7)
+local settingsButton = createButton("Configurações", 0.9)
 
 -- Funções dos botões
 autoFarmButton.MouseButton1Click:Connect(function()
-    print("Auto Farm ativado")
-    -- Mostrar opções de Auto Farm
-    createAutoFarmOptions()
+    print("Farm ativado")
+    -- Mostrar funções de Farm do Redz
+    createFarmOptionsRedz()
 end)
 
 statusButton.MouseButton1Click:Connect(function()
     print("Status mostrado")
-    -- Mostrar opções de Status
-    createStatusOptions()
+    -- Mostrar funções de Status do Redz
+    createStatusOptionsRedz()
 end)
 
-fruitsButton.MouseButton1Click:Connect(function()
-    print("Fruits coletado")
-    -- Mostrar opções de Frutas
-    createFruitOptions()
+seaEventButton.MouseButton1Click:Connect(function()
+    print("Sea Evento ativado")
+    -- Mostrar funções de Auto Sea Event do W Azure
+    createSeaEventOptionsAzure()
+end)
+
+questsButton.MouseButton1Click:Connect(function()
+    print("Quests mostradas")
+    -- Mostrar funções de Quests do Redz
+    createQuestsOptionsRedz()
+end)
+
+settingsButton.MouseButton1Click:Connect(function()
+    print("Configurações mostradas")
+    -- Mostrar funções de Configurações do Redz
+    createSettingsOptionsRedz()
 end)
 
 print("Interface gráfica criada com sucesso!")
 
 -- Funções adicionais para as opções
 
-function createAutoFarmOptions()
-    -- Adicione aqui a lógica para mostrar as opções de Auto Farm
-    -- Incluindo a lógica de Auto Farm Level e Auto Farm Baú
+function createFarmOptionsRedz()
+    -- Adicione aqui a lógica para mostrar as funções de Farm do Redz
+    -- Incluindo Auto Farm Level e Auto Farm Baú
 end
 
-function createStatusOptions()
-    -- Adicione aqui a lógica para mostrar as opções de Status
-    -- Incluindo a lógica de seleção de Status
+function createStatusOptionsRedz()
+    -- Adicione aqui a lógica para mostrar as funções de Status do Redz
 end
 
-function createFruitOptions()
-    -- Adicione aqui a lógica para mostrar as opções de Frutas
-    -- Incluindo a lógica de girar frutas, guardar frutas e teleportar para frutas
+function createSeaEventOptionsAzure()
+    -- Adicione aqui a lógica para mostrar as funções de Auto Sea Event do W Azure
+end
+
+function createQuestsOptionsRedz()
+    -- Adicione aqui a lógica para mostrar as funções de Quests do Redz
+end
+
+function createSettingsOptionsRedz()
+    -- Adicione aqui a lógica para mostrar as funções de Configurações do Redz
 end
