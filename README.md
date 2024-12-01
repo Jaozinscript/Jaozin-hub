@@ -130,4 +130,46 @@ function createStatusOptionsRedz()
     local statusActive = false
     statusToggle.MouseButton1Click:Connect(function()
         statusActive = not statusActive
-        statusToggle.Text = statusActive and "Desativ
+        statusToggle.Text = statusActive and "Desativar Status" or "Ativar Status"
+        print("Status " .. (statusActive and "ativado" or "desativado"))
+    end)
+end
+
+function createSeaEventOptionsAzure()
+    optionsFrame:ClearAllChildren()
+    optionsFrame.Visible = true
+    local seaEventLabel = Instance.new("TextLabel", optionsFrame)
+    seaEventLabel.Size = UDim2.new(1, 0, 0.1, 0)
+    seaEventLabel.Position = UDim2.new(0, 0, 0, 0)
+    seaEventLabel.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+    seaEventLabel.BackgroundTransparency = 0.5
+    seaEventLabel.Text = "Opções de Auto Sea Event do W Azure"
+    seaEventLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+    seaEventLabel.Font = Enum.Font.SourceSansBold
+    seaEventLabel.TextScaled = true
+
+    -- Botão para ativar/desativar Sea Event
+    local seaEventToggle = Instance.new("TextButton", optionsFrame)
+    seaEventToggle.Size = UDim2.new(0.8, 0, 0.1, 0)
+    seaEventToggle.Position = UDim2.new(0.1, 0, 0.2, 0)
+    seaEventToggle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+    seaEventToggle.BackgroundTransparency = 0.3
+    seaEventToggle.Text = "Ativar Sea Event"
+    seaEventToggle.TextColor3 = Color3.fromRGB(0, 0, 0)
+
+    local seaEventActive = false
+    seaEventToggle.MouseButton1Click:Connect(function()
+        seaEventActive = not seaEventActive
+        seaEventToggle.Text = seaEventActive and "Desativar Sea Event" or "Ativar Sea Event"
+        print("Sea Event " .. (seaEventActive and "ativado" or "desativado"))
+    end)
+end
+
+function createQuestsOptionsRedz()
+    optionsFrame:ClearAllChildren()
+    optionsFrame.Visible = true
+    local questsLabel = Instance.new("TextLabel", optionsFrame)
+    questsLabel.Size = UDim2.new(1, 0, 0.1, 0)
+    questsLabel.Position = UDim2.new(0, 0, 0, 0)
+    questsLabel.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+    questsLabel.Background
